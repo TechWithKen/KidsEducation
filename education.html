@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Education</title>
+    <link rel="stylesheet" href="edu.css">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="logo-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Kids Education</h1>
+        <div id="playerName"></div>
+    </header>
+    <main>
+        <section id="nameSection" class="quiz">
+            <h2>Enter your name to start</h2>
+            <form id="nameForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </section>
+        <section id="quizSection" class="quiz" style="display:none;">
+            <h2 id="questionTitle">Question 1</h2>
+            <p id="questionText"></p>
+            <form id="quizForm">
+                <input type="text" id="answerInput" required>
+                <button type="submit">Submit Answer</button>
+            </form>
+            <div id="result"></div>
+            <div id="answeredQuestions" style="margin-top: 20px;">
+                <h3>Answered Questions:</h3>
+                <ul id="answeredList"></ul>
+            </div>
+        </section>
+        <section id="scoreSection" class="quiz" style="display:none;">
+            <h2>Quiz Completed!</h2>
+            <p id="finalScore"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quality Education. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
